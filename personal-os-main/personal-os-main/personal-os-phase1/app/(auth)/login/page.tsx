@@ -1,0 +1,2 @@
+import { signIn, signUp } from './actions';
+export default function Login(){return <main><p>PERSONAL OS</p><h1>Access your system</h1><p>Your operating data is private by default.</p><form><label>Email<br/><input name="email" type="email" required/></label><br/><br/><label>Password<br/><input name="password" type="password" minLength={8} required/></label><br/><br/><button formAction={signIn}>Sign in</button> <button formAction={signUp}>Create account</button></form></main>}

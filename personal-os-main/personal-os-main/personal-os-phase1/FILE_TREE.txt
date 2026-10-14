@@ -1,0 +1,101 @@
+personal-os-phase1
+│
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+├── next-env.d.ts
+├── README.md
+├── CHANGELOG.md
+├── PROJECT_HANDOFF.md
+├── INSTALL.md
+├── INSTALL.txt
+├── PATCH-MANIFEST.txt
+├── FILE_TREE.txt
+│
+├── app
+│   │
+│   ├── layout.tsx
+│   ├── page.tsx
+│   │
+│   ├── auth
+│   │   └── confirm
+│   │       └── route.ts
+│   │
+│   ├── (auth)
+│   │   └── login
+│   │       ├── page.tsx
+│   │       └── actions.ts
+│   │
+│   └── (app)
+│       │
+│       ├── layout.tsx
+│       ├── actions.ts
+│       │
+│       ├── debug
+│       │   │
+│       │   ├── new
+│       │   │   ├── page.tsx
+│       │   │   └── actions.ts
+│       │   │
+│       │   └── [id]
+│       │       ├── page.tsx
+│       │       ├── not-found.tsx
+│       │       │
+│       │       └── analyze
+│       │           ├── page.tsx
+│       │           ├── actions.ts
+│       │           └── DiscoveryForm.tsx
+│       │
+│       ├── diagnostics
+│       │   ├── page.tsx
+│       │   ├── actions.ts
+│       │   └── SelfTest.tsx
+│       │
+│       ├── export
+│       │   └── route.ts
+│       │
+│       ├── history
+│       │   ├── page.tsx
+│       │   │
+│       │   └── [id]
+│       │       ├── page.tsx
+│       │       └── actions.ts
+│       │
+│       └── system
+│           └── components
+│               ├── page.tsx
+│               │
+│               └── [id]
+│                   ├── page.tsx
+│                   └── actions.ts
+│
+├── docs
+│   ├── PROJECT_DESIGN.md
+│   ├── SELF-TEST.md
+│   └── DECISIONS.md
+│
+├── lib
+│   │
+│   ├── domain
+│   │   ├── lifecycle.ts
+│   │   └── types.ts
+│   │
+│   ├── validation
+│   │   ├── component.ts
+│   │   ├── discovery.ts
+│   │   └── debug-session.ts
+│   │
+│   └── supabase
+│       ├── browser.ts
+│       └── server.ts
+│
+├── supabase
+│   └── migrations
+│       ├── 0001_phase1.sql
+│       ├── 20261005_001_add_debug_session_archived_at.sql
+│       └── 20261006_001_add_diagnostic_events.sql
+│
+└── tests
+    └── domain
+        ├── discovery.test.ts
+        └── lifecycle.test.ts

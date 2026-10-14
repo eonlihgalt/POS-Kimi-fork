@@ -1,0 +1,5 @@
+PERSONAL OS v0.4.0-alpha.2
+TARGET BRANCH: develop
+NEW: supabase/migrations/20261006_001_add_diagnostic_events.sql
+REPLACE: app/(app)/diagnostics/actions.ts; app/(app)/diagnostics/page.tsx; app/(app)/diagnostics/SelfTest.tsx; docs/SELF-TEST.md
+DATABASE CHANGE: YES - diagnostic_events table with RLS

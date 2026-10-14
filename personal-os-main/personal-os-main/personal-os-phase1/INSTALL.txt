@@ -1,0 +1,10 @@
+Apply to develop only. Apply the included diagnostic_events migration to Preview Supabase BEFORE testing. Commit: Add structured Developer Diagnostics events
+
+Acceptance: 
+Diagnostics loads after migration; 
+Self-Test reaches 8/8 and HEALTHY on known-good system; 
+run ID/timestamps appear in downloaded report; 
+Recent application errors section loads; 
+RLS prevents another user reading events; 
+malformed/missing archive schema produces a sanitized diagnostic event when logging is available; 
+no Personal OS input content is placed in diagnostic_events; v0.3 regression remains functional.
